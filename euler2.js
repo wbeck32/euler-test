@@ -5,7 +5,7 @@
 
 //By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
 //find the sum of the even-valued terms.
-
+function fibo() {
 var fibSum = 0;
 var tmp = 0;
 var total = 0;
@@ -35,9 +35,13 @@ toSum.forEach(function(element,index,array){
 	total += (element * Math.pow(10,-100));
 });
 
-console.log('The total I get is: ('+total+')^100.');
 
+}
 
+function fiboDisp() {
+	//The script runs so slowly that waiting for it can crash the browser.
+	$('.fibo').html('<span class="bold"><a href="https://projecteuler.net/problem=2">Question 2:</a></span> The total I got is: (4.728731434505853e+208)^100');
 
+}
 
 
